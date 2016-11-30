@@ -1,0 +1,4 @@
+Tv 923923 1000 buc 47
+Laptop 23727 1700 buc 24
+Telefon 22414 660 buc 12
+Tableta 11922 720 buc 17

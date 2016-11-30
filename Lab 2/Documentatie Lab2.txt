@@ -1,0 +1,98 @@
+Documentatie Laborator 1
+
+Tema: Generalizati programul de la laboratorul 1 (pct. A) prin inlocuirea operatiei de
+adunare cu un operator asociativ general.
+
+Implementati un	program	pentru adunare matrice de numere complexe.
+Testati	programul corespunzator adunarii matricilor pentru diferiti operatori si	
+analizati timpul de executie.
+
+Obs:Datele de intrare au fost citite din fisiere generate random avand valori cuprinse intre 0 si 99.
+
+Caz de testare : Operatia dintre doua matrici folosind operatorul de adunare
+
+	Cazul 1:
+		Dimensiune matrici: 10x10;
+		Numar threaduri: 1;
+		Timp de executie: ~0.000070 s;
+		
+	Cazul 2:
+		Dimensiune matrici: 100x100;
+		Numar threaduri: 1;
+		Timp de executie: ~0.000550 s;
+	
+	Cazul 3:
+		Dimensiune matrici: 1000x1000;
+		Numar threaduri: 1;
+		Timp de executie: ~0.001650 s;
+	
+	Cazul 4:
+		Dimensiune matrici: 1000x1000;
+		Numar threaduri: 2;
+		Timp de executie: ~0.001420 s;
+		
+	Cazul 5:
+		Dimensiune matrici: 1000x1000;
+		Numar threaduri: 4;
+		Timp de executie: ~0.001550 s;
+		
+Caz de testare : Operatia dintre doua matrici folosind operatorul de Inmultire
+
+	Cazul 1:
+		Dimensiune matrici: 10x10;
+		Numar threaduri: 1;
+		Timp de executie: ~0.000090 s;;
+		
+	Cazul 2:
+		Dimensiune matrici: 100x100;
+		Numar threaduri: 1;
+		Timp de executie: ~0.000630 s;
+	
+	Cazul 3:
+		Dimensiune matrici: 1000x1000;
+		Numar threaduri: 1;
+		Timp de executie: ~0.001850 s;
+	
+	Cazul 4:
+		Dimensiune matrici: 1000x1000;
+		Numar threaduri: 2;
+		Timp de executie: ~0.001620 s;
+		
+	Cazul 5:
+		Dimensiune matrici: 1000x1000;
+		Numar threaduri: 4;
+		Timp de executie: ~0.001690 s;
+		
+Caz de testare : Adunarea a doua matrici cu numere complexe 
+	Obs:Datele de intrare au fost citite din fisiere generate random avand valori cuprinse intre -100 si 99.
+	Cazul 1:
+		Dimensiune matrici: 10x10;
+		Numar threaduri: 1;
+		Timp de executie: ~0.000122 s;
+		
+	Cazul 2:
+		Dimensiune matrici: 100x100;
+		Numar threaduri: 1;
+		Timp de executie: ~0.001990 s;
+	
+	Cazul 3:
+		Dimensiune matrici: 1000x1000;
+		Numar threaduri: 1;
+		Timp de executie: ~0.013050s;
+	
+	Cazul 4:
+		Dimensiune matrici: 1000x1000;
+		Numar threaduri: 2;
+		Timp de executie: ~0.012150s;
+		
+	Cazul 5:
+		Dimensiune matrici: 1000x1000;
+		Numar threaduri: 4;
+		Timp de executie: ~0.012560s;
+
+Observatii:
+	Sistemul pe care s-a efectuat testarea:
+		OS: Windows 8.1 64-bits;
+		Procesor: Intel Core i5-6200U CPU 2.3GHz;
+		RAM: 8GB;
+		

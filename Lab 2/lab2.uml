@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="342.46701388888886" y="28.0">Operator</node>
+    <node x="13.5" y="1158.0">GenericOperator</node>
+    <node x="679.3333333333334" y="0.0">ComplexNumber</node>
+    <node x="308.0" y="834.0">MatrixMultiplicationThread</node>
+    <node x="385.234375" y="204.0">AdditionOperator</node>
+    <node x="0.0" y="847.5">MatrixAdditionThread</node>
+    <node x="237.984375" y="369.0">Matrix</node>
+    <node x="184.234375" y="217.5">MultiplyOperator</node>
+    <node x="0.0" y="1269.0">GenericAdditionOperator</node>
+    <node x="679.5" y="409.5">ComplexNumberMatrix</node>
+    <node x="714.25" y="888.5">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Main" target="ComplexNumberMatrix">
+      <point x="60.25" y="-85.0" />
+      <point x="0.0" y="167.0" />
+    </edge>
+    <edge source="MatrixAdditionThread" target="Matrix">
+      <point x="0.0" y="-126.0" />
+      <point x="144.0" y="809.0" />
+      <point x="303.81770833333337" y="809.0" />
+      <point x="-131.66666666666663" y="207.5" />
+    </edge>
+    <edge source="Matrix" target="AdditionOperator">
+      <point x="0.0" y="-207.5" />
+      <point x="-50.25" y="57.5" />
+    </edge>
+    <edge source="GenericAdditionOperator" target="GenericOperator">
+      <point x="0.0" y="-30.5" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="MatrixMultiplicationThread" target="Matrix">
+      <point x="0.0" y="-139.5" />
+      <point x="462.0" y="809.0" />
+      <point x="435.484375" y="809.0" />
+      <point x="0.0" y="207.5" />
+    </edge>
+    <edge source="AdditionOperator" target="ComplexNumber">
+      <point x="50.25" y="-57.5" />
+      <point x="535.984375" y="184.0" />
+      <point x="736.0" y="184.0" />
+      <point x="-113.33333333333337" y="72.0" />
+    </edge>
+    <edge source="ComplexNumberMatrix" target="ComplexNumber">
+      <point x="161.625" y="-167.0" />
+      <point x="1056.625" y="339.0" />
+      <point x="939.0260416666666" y="339.0" />
+      <point x="939.0260416666666" y="184.0" />
+      <point x="962.6666666666666" y="184.0" />
+      <point x="113.33333333333326" y="72.0" />
+    </edge>
+    <edge source="Main" target="Matrix">
+      <point x="-60.25" y="-85.0" />
+      <point x="774.5" y="809.0" />
+      <point x="567.1510416666666" y="809.0" />
+      <point x="131.66666666666663" y="207.5" />
+    </edge>
+    <edge source="ComplexNumberMatrix" target="Operator">
+      <point x="-53.875" y="-167.0" />
+      <point x="841.125" y="349.0" />
+      <point x="871.8680555555555" y="349.0" />
+      <point x="871.8680555555555" y="174.0" />
+      <point x="493.30034722222223" y="174.0" />
+      <point x="60.33333333333337" y="44.0" />
+    </edge>
+    <edge source="MultiplyOperator" target="Operator">
+      <point x="0.0" y="-44.0" />
+      <point x="274.734375" y="184.0" />
+      <point x="372.6336805555555" y="184.0" />
+      <point x="-60.33333333333337" y="44.0" />
+    </edge>
+    <edge source="AdditionOperator" target="Operator">
+      <point x="-50.25" y="-57.5" />
+      <point x="435.484375" y="184.0" />
+      <point x="432.96701388888886" y="184.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="ComplexNumberMatrix" target="AdditionOperator">
+      <point x="-161.625" y="-167.0" />
+      <point x="733.375" y="349.0" />
+      <point x="535.984375" y="349.0" />
+      <point x="50.25" y="57.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="439.27272727272725" y="696.1818181818181" />
+  <SelectedNodes>
+    <node>AdditionOperator</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

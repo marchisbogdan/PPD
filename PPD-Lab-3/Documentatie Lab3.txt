@@ -1,0 +1,93 @@
+Documentatie Laborator 1
+
+Tema: Implementati in C++	
+	A) adunarea a doua matrice de dimensiune (nxm)
+	B) inmultirea a doua matrice de dimensiune (nxk), respectiv (k,m) folosind multithreading.
+- Numarul de threduri p trebuie sa fie un parametru care poate fi citit (modificat) inainte de inceperea executiei.
+
+Datele de intrare corespunzatoare elementelor matricilor se vor citi din fisiere (care au fost
+anterior create	folosind generare aleatoare de numere)!
+
+Programul va afisa la sfarsit timpul global/total T de executie corespunzator operatiei de
+adunare(respective operatiei de inmultire) de matrice.
+
+Important: folositi o incarcare	echilibrata de calcul pe fiecare thread. (Balanced Distribution )
+
+Clase:
+	Matrix - clasa implementeaza functionalitatile corespunzatoare unei matrici
+		functii: - constructor si distructor
+			- writeGeneratedMatrixToFile() : copiaza continutul matricii generate aleator intr-un fisier
+			- readFromFile() : citeste continutul unui fisier si populeaza matricea cu acele valori
+			- getRows()
+			- getColumns()
+			- addition() : calculeaza suma a doua valori din matrice
+			- multiply() : calculeaza valorea de pe o anumita pozitie pt o matrice
+			- printMatrix()
+			- thread_addition(): - disperseaza incarcatura unui thread 
+			- thread_multiply(): - disperseaza incarcatura unui thread 
+	Main - clasa principala
+		functii: - main()
+			- adunareaADouaMatrici()
+			- inmultireaADouaMatrici()
+Obs:Datele de intrare au fost citite din fisiere generate random avand valori cuprinse intre 0 si 99.
+
+Caz de testare : Adunarea a doua matrici
+
+	Cazul 1:
+		Dimensiune matrici: 10x10;
+		Numar threaduri: 1;
+		Timp de executie: ~0.410 ms;
+		
+	Cazul 2:
+		Dimensiune matrici: 10x10;
+		Numar threaduri: 4;
+		Timp de executie: ~0.560 ms;
+	
+	Cazul 3:
+		Dimensiune matrici: 1000x1000;
+		Numar threaduri: 1;
+		Timp de executie: ~1.800 ms;
+	
+	Cazul 4:
+		Dimensiune matrici: 1000x1000;
+		Numar threaduri: 2;
+		Timp de executie: ~1.400 ms;
+		
+	Cazul 5:
+		Dimensiune matrici: 1000x1000;
+		Numar threaduri: 4;
+		Timp de executie: ~1.350ms;
+		
+Caz de testare : Inmultirea a doua matrici
+
+	Cazul 1:
+		Dimensiune matrici: 10x10 si 10x10;
+		Numar threaduri: 1;
+		Timp de executie: ~0.700ms;
+		
+	Cazul 1:
+		Dimensiune matrici: 10x10 si 10x10;
+		Numar threaduri: 4;
+		Timp de executie: ~0.850ms;
+	
+	Cazul 1:
+		Dimensiune matrici: 1000x1000 si 1000x1000;
+		Numar threaduri: 1;
+		Timp de executie: ~4.350s;
+	
+	Cazul 1:
+		Dimensiune matrici: 1000x1000 si 1000x1000;
+		Numar threaduri: 2;
+		Timp de executie: ~2.880s;
+		
+	Cazul 1:
+		Dimensiune matrici: 1000x1000 si 1000x1000;
+		Numar threaduri: 4;
+		Timp de executie: ~3.550s;
+
+Observatii:
+	Sistemul pe care s-a efectuat testarea:
+		OS: Windows 8.1 64-bits;
+		Procesor: Intel Core i5-6200U CPU 2.3GHz;
+		RAM: 8GB;
+		
