@@ -1,0 +1,81 @@
+Documentatie Laborator 1
+
+Tema:
+Folosirea executiei concurente prin apeluri asincrone.
+Folosirea mecanismelor: future, promises si thread_pool.
+Analiza imbunatatirii performantei executiei unei aplicatii (de tip business) prin
+programare concurenta.
+
+Magazin
+Un magazin vinde produse pentru care are o evidenta caracterizata de urmatoarele
+atribute (nume, cod, pret_unitar, unit_masura, pret_unitar).
+Se pot opera mai multe vanzari simultane care trebuie sa inregistreze automat
+modificarile de stocuri.
+Se mentine o evidenta si a vanzarilor si a facturilor emise;
+facturile sunt caracterizate de (data, lista_produse, suma_totala). Se mentine de
+asemenea si un sold total (suma existenta in casa). Periodic sistemul face o verificare
+a stocurilor prin verificarea corespondentei corecte intre stoc, totalitatea produselor
+vandute (de la ultima verificare pana in prezent), sumele incasate in aceeasi perioada
+si soldul total.
+
+Pentru a simula vanzarile se vor implementa urmatoarele variante:
+1) initierea vanzarilor printr-o interfata minimala;
+2) crearea unui thread paralel care initiaza/creeaza la interval de 5 sec o noua
+vanzare folosind date generate aleatoriu;
+3) [optional] adaptarea problemei pentru a fi o aplicatie client-server prin care
+vanzarile sunt initiate remote de client, iar pe server se face gestiunea
+magazinului. (Aceasta varianta poate fi predata si dupa deadline-ul
+corespunzator laboratorului 5 si in caz de succes conduce la marirea notei
+finale de laborator cu 2 puncte.)
+
+Pentru testare/verificare se cere salvarea pe suport extern a listei cu produse, a listei
+facturilor si a rezultatelor operatiilor de verificare executate periodic.
+Limbajul de implementare: la alegere
+
+Caz de testare :
+    lista generata:
+4/11/2016 4:38:45
+Tv 923923 buc 1000 4 4000
+4000
+
+4/11/2016 4:38:45
+Laptop 23727 buc 1700 9 15300
+Telefon 22414 buc 660 10 6600
+Laptop 23727 buc 1700 8 13600
+35500
+
+4/11/2016 4:38:45
+0
+
+4/11/2016 4:38:45
+0
+
+4/11/2016 4:38:45
+Telefon 22414 buc 660 1 660
+Tableta 11922 buc 720 7 5040
+Tv 923923 buc 1000 1 1000
+6700
+
+4/11/2016 4:38:46
+Laptop 23727 buc 1700 6 10200
+Tableta 11922 buc 720 7 5040
+Tv 923923 buc 1000 8 8000
+23240
+
+    Operatii:
+4/11/2016 4:38:45
+Stock:
+Tv:43
+Laptop:7
+Telefon:2
+Tableta:17
+Nr of sold products:31
+Income: 39500
+Total income: 40500
+
+Observatii:
+	Sistemul pe care s-a efectuat testarea:
+		OS: Windows 8.1 64-bits;
+		Procesor: Intel Core i5-6200U CPU 2.3GHz;
+		RAM: 8GB;
+		

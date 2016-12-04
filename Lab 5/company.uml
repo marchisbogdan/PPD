@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.company</OriginalElement>
+  <nodes>
+    <node x="120.41500000000002" y="628.0">com.company.Vanzare</node>
+    <node x="0.0" y="0.0">com.company.Produs</node>
+    <node x="147.04000000000002" y="851.0">com.company.Factura</node>
+    <node x="185.7133333333334" y="1918.0">com.company.Main</node>
+    <node x="25.213333333333367" y="1317.0">com.company.Magazin</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.company.Factura" target="com.company.Vanzare">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.Magazin">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.company.Magazin" target="com.company.Factura">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.company.Vanzare" target="com.company.Produs">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.company.Magazin" target="com.company.Vanzare">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.company.Magazin" target="com.company.Produs">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="396.9999999999998" y="1144.0" />
+  <SelectedNodes>
+    <node>com.company.Vanzare</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
